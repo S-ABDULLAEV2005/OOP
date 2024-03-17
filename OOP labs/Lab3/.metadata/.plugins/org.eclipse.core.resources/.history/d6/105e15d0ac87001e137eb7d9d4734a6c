@@ -1,0 +1,7 @@
+package my_pack;
+
+public class Sedan extends Circle {
+    void drive() {
+    	System.out.println("Sedan is driving");
+    }
+}

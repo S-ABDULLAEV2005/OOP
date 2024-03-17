@@ -1,0 +1,9 @@
+package prepend;
+import java.util.List;
+public class Student extends Person {
+   private int studentId;
+   private String major;
+   private List<Course> enrolledCourses;
+   
+   
+}

@@ -1,0 +1,13 @@
+package problem3;
+
+public abstract class Employee implements Cloneable {
+    // ... (existing fields and methods)
+
+    // Overloaded constructor
+    public Employee(String employeeId, String firstName, String lastName) {
+        this.employeeId = employeeId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.salary = 0.0;  // Default salary for this constructor
+    }
+}

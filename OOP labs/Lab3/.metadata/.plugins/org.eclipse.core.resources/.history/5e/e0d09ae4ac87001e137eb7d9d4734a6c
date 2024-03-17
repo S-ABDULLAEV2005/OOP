@@ -1,0 +1,10 @@
+package my_pack;
+
+public abstract class Car {
+   void startEngine() {
+	   System.out.println("Engine started!");
+   }
+    abstract void drive();
+
+
+}

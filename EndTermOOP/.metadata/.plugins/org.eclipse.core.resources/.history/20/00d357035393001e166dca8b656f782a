@@ -1,0 +1,11 @@
+package problem5;
+
+import java.util.Comparator;
+
+public class PublicationYearComparator implements Comparator<Book> {
+    @Override
+    public int compare(Book book1, Book book2) {
+        // Compare books based on their publication years
+        return Integer.compare(book1.getPublicationYear(), book2.getPublicationYear());
+    }
+}

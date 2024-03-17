@@ -1,0 +1,7 @@
+package my_pack;
+
+public class Frog extends Main{
+   public void voice(){
+	   System.out.println("Kwaak, kwaak!");
+   }
+}

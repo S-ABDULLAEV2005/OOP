@@ -1,0 +1,62 @@
+package my_pack;
+import java.util.ArrayList;
+import java.util.List;
+
+// Person class
+class Person {
+    private String name;
+    private String dateOfBirth;
+    private String contactInfo;
+
+    public Person(String name, String dateOfBirth, String contactInfo) {
+        this.name = name;
+        this.dateOfBirth = dateOfBirth;
+        this.contactInfo = contactInfo;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public String getContactInfo() {
+        return contactInfo;
+    }
+}
+
+
+// Department class
+class Department {
+    private String departmentId;
+    private String departmentName;
+    private List<Professor> professors;
+
+    public Department(String departmentId, String departmentName) {
+        this.departmentId = departmentId;
+        this.departmentName = departmentName;
+        this.professors = new ArrayList<>();
+    }
+
+    public String getDepartmentId() {
+        return departmentId;
+    }
+
+    public String getDepartmentName() {
+        return departmentName;
+    }
+
+    public List<Professor> getProfessors() {
+        return professors;
+    }
+
+    public void addProfessor(Professor professor) {
+        professors.add(professor);
+    }
+}
+
+// Main class for testing
+public class UniversityManagementSystem {
+    }

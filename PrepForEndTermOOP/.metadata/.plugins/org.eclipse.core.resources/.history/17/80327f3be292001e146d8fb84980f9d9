@@ -1,0 +1,15 @@
+package my_pack;
+
+public class Animal {
+
+	public static void main(String[] args) {
+		Dog d = new Dog();
+		Cat c = new Cat();
+		Hen h = new Hen();
+		
+		System.out.println(d());
+        c.voice();
+        h.voice();
+	}
+
+}

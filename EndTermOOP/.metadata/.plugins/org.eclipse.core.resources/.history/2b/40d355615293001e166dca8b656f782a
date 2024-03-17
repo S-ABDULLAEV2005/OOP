@@ -1,0 +1,5 @@
+package problem9b;
+
+public interface EmailSender {
+
+}

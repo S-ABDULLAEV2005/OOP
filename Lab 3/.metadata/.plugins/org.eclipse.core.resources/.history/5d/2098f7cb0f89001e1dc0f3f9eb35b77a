@@ -1,0 +1,97 @@
+package Prob4;
+//import java.util.Date;
+//import java.util.Vector;
+//
+//public class Manager extends Employee {
+//    private Vector<Employee> team;
+//
+//    public Manager(String name, int age, int id, String position, double annualSalary, Date hireDate, String nationalInsuranceNumber) {
+//        super(name, age, id, position, annualSalary, hireDate, nationalInsuranceNumber);
+//        this.team = new Vector<>();
+//    }
+//
+//    public void addEmployee(Employee employee) {
+//        team.add(employee);
+//    }
+//
+//    public double getBonus() {
+//        return team.size() * 1000;
+//    }
+//
+//    @Override
+//    public String toString() {
+//        return super.toString() + ", " + this.team;
+//    }
+//
+//    @Override
+//    public boolean equals(Object obj) {
+//        if (this == obj) return true;
+//        if (obj == null || getClass() != obj.getClass()) return false;
+//        if (!super.equals(obj)) return false;
+//
+//        Manager manager = (Manager) obj;
+//
+//        return team != null ? team.equals(manager.team) : manager.team == null;
+//    }
+//}
+import java.util.Comparator;
+import java.util.Date;
+import java.util.Vector;
+
+public class Manager extends Employee implements Comparable<Employee> {
+    private Vector<Employee> team;
+
+    public Manager(String name, int age, int id, String position, double annualSalary, Date hireDate, String nationalInsuranceNumber) {
+        super(name, age, id, position, annualSalary, hireDate, nationalInsuranceNumber);
+        this.team = new Vector<>();
+    }
+
+    public void addEmployee(Employee employee) {
+        team.add(employee);
+    }
+
+    public double getBonus() {
+        return team.size() * 1000;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", " + this.team;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        if (!super.equals(obj)) return false;
+
+        Manager manager = (Manager) obj;
+
+        return team != null ? team.equals(manager.team) : manager.team == null;
+    }
+
+    @Override
+    public int compareTo(Employee other) {
+        if (this.getAnnualSalary() != other.getAnnualSalary()) {
+            return Double.compare(this.getAnnualSalary(), other.getAnnualSalary());
+        } else if (this.getBonus() != other.getBonus()) {
+            return Double.compare(this.getBonus(), other.getBonus());
+        } else {
+            return this.getName().compareTo(other.getName());
+        }
+    }
+
+    public static Comparator<Employee> NameComparator = new Comparator<Employee>() {
+        @Override
+        public int compare(Employee a, Employee b) {
+            return a.getName().compareTo(b.getName());
+        }
+    };
+
+    public static Comparator<Employee> HireDateComparator = new Comparator<Employee>() {
+        @Override
+        public int compare(Employee a, Employee b) {
+            return a.getHireDate().compareTo(b.getHireDate());
+        }
+    };
+}

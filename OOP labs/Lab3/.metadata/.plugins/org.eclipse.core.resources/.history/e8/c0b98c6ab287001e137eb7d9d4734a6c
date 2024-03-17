@@ -1,0 +1,32 @@
+package problem4;
+
+import java.util.Date;
+
+class Employee extends Person {
+    private double annualSalary;
+    private Date hireDate;
+    private String nationalInsuranceNumber;
+
+    // Constructors, getters, setters, etc.
+
+    @Override
+    public String toString() {
+        return "Employee [name=" + getName() +
+               ", annualSalary=" + annualSalary +
+               ", hireDate=" + hireDate +
+               ", nationalInsuranceNumber=" + nationalInsuranceNumber + "]";
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null || getClass() != obj.getClass())
+            return false;
+        if (!super.equals(obj))
+            return false;
+        Employee employee = (Employee) obj;
+        return Double.compare(employee.annualSalary, annualSalary) == 0 &&
+               hireDate.equals(employee.hireDate) &&
+               nationalInsuranceNumber.equals(employee.nationalInsuranceNumber);
+    }

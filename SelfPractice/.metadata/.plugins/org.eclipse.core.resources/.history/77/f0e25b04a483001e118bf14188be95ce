@@ -1,0 +1,25 @@
+package my_pack;
+
+public class Prob1 {
+
+	   public static void main(String[] args){
+		int denominator; 
+		int numerator; 
+		int ratio = 0;
+        
+		numerator = 5;
+		denominator = 0;
+
+	    try{
+	    	ratio = numerator / denominator;
+	    	}
+	    catch(ArithmeticException e){
+	    	System.out.println("Arithmetic Exception was found");
+	    	e.printStackTrace();
+	    }
+		System.out.println("The answer is: "+ ratio);
+		System.out.println("Done.");
+	    }
+	}
+
+

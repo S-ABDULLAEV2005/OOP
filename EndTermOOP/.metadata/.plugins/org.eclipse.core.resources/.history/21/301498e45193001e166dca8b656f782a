@@ -1,0 +1,16 @@
+package problem9;
+
+public class PaymentProcessor {
+	 private PaymentGateway paymentGateway;
+
+	 // Dependency Injection through Constructor
+	 public PaymentProcessor(PaymentGateway paymentGateway) {
+	     this.paymentGateway = paymentGateway;
+	 }
+
+	 // Method that uses the injected dependency
+	 public void processPayment(double amount) {
+	     // Delegate payment processing to the injected PaymentGateway
+	     paymentGateway.processPayment(amount);
+	 }
+	}

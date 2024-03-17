@@ -1,0 +1,16 @@
+package my_pack;
+
+public class Mouse2 {
+	 String texture = "Matte";
+	 public static void leftClick() {
+	 	System.out.println("Click!");
+	 	
+	 }
+	 public static void rightClick() {
+	 	System.out.println("Click!");
+	 }
+	 public static void connect() {
+	 	System.out.println("connected");
+	 }
+
+}

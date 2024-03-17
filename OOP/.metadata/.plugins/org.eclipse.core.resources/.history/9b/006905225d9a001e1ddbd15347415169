@@ -1,0 +1,63 @@
+package oopProject;
+
+
+/**
+* @generated
+*/
+public class Faculty extends Student {
+    
+    /**
+    * @generated
+    */
+    private School school;
+    
+    /**
+    * @generated
+    */
+    private Student students;
+    
+    
+    /**
+    * @generated
+    */
+    private Student student;
+    
+    /**
+    * @generated
+    */
+    private Student student;
+    
+    
+    /**
+    * @generated
+    */
+    public School getSchool() {
+        return this.school;
+    }
+    
+    /**
+    * @generated
+    */
+    public School setSchool(School school) {
+        this.school = school;
+    }
+    
+    /**
+    * @generated
+    */
+    public Student getStudents() {
+        return this.students;
+    }
+    
+    /**
+    * @generated
+    */
+    public Student setStudents(Student students) {
+        this.students = students;
+    }
+    
+
+    //                          Operations                                  
+    
+    
+}

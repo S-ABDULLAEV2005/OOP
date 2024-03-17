@@ -1,0 +1,29 @@
+package Prob4;
+
+import java.util.Date;
+
+public class Employee extends Person {
+    private double annualSalary;
+    private Date hireDate;
+    private String nationalInsuranceNumber;
+
+    // Constructors
+
+    // Accessor methods
+
+    @Override
+    public String toString() {
+        // Override toString
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        // Override equals
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        // Shallow cloning, you can implement deep cloning if needed
+        return super.clone();
+    }
+}

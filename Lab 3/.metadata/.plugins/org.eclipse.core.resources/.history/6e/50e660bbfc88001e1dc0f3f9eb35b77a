@@ -1,0 +1,39 @@
+package Prob4;
+
+import java.util.Vector;
+
+class Manager extends Employee {
+    private Vector<Employee> team;
+    private double bonus;
+
+   
+    @Override
+    public String toString() {
+        return "Manager{" +
+                "name='" + name + '\'' +
+                ", annualSalary=" + annualSalary +
+                ", hireDate=" + hireDate +
+                ", nationalInsuranceNumber='" + nationalInsuranceNumber + '\'' +
+                ", team=" + team +
+                ", bonus=" + bonus +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        if (!super.equals(obj)) return false;
+        Manager manager = (Manager) obj;
+        return Double.compare(manager.bonus, bonus) == 0 &&
+                team.equals(manager.team);
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        // Shallow cloning for simplicity, implement deep cloning if needed
+        Manager clone = (Manager) super.clone();
+        clone.team = (Vector<Employee>) team.clone();
+        return clone;
+    }
+}

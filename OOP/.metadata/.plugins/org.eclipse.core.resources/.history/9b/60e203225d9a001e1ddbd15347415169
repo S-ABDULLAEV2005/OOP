@@ -1,0 +1,54 @@
+package oopProject;
+
+
+
+
+public class Admin extends User {
+    
+    
+    
+
+    //                          Operations                                  
+    
+    /**
+    * @generated
+    */
+    public void addUser() {
+        //TODO
+        return null;
+    }
+    
+    /**
+    * @generated
+    */
+    public void removeUser() {
+        //TODO
+        return null;
+    }
+    
+    /**
+    * @generated
+    */
+    public void updateUser() {
+        //TODO
+        return null;
+    }
+    
+    /**
+    * @generated
+    */
+    public list<User> viewAllUsers() {
+        //TODO
+        return null;
+    }
+    
+    /**
+    * @generated
+    */
+    public void performAdminTask() {
+        //TODO
+        return null;
+    }
+    
+    
+}

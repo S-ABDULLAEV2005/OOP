@@ -1,0 +1,56 @@
+package Prob4;
+import java.util.Date;
+import java.util.Vector;
+
+public class Test {
+    public static void main(String[] args) {
+        // Test Employee class
+        Employee emp1 = new Employee("John Doe", 50000.0, new Date(), "123-456-789");
+        Employee emp2 = new Employee("Jane Doe", 60000.0, new Date(), "987-654-321");
+
+        System.out.println("Employee 1: " + emp1);
+        System.out.println("Employee 2: " + emp2);
+
+        System.out.println("Are employees equal? " + emp1.equals(emp2));
+
+        try {
+            // Shallow clone
+            Employee empClone = (Employee) emp1.clone();
+            System.out.println("Cloned Employee: " + empClone);
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+
+        // Test Manager class
+        Manager manager1 = new Manager("Manager Smith", 80000.0, new Date(), "111-222-333", new Vector<>(), 5000.0);
+        Manager manager2 = new Manager("Manager Johnson", 90000.0, new Date(), "444-555-666", new Vector<>(), 3000.0);
+
+        System.out.println("Manager 1: " + manager1);
+        System.out.println("Manager 2: " + manager2);
+
+        System.out.println("Are managers equal? " + manager1.equals(manager2));
+
+        try {
+            // Shallow clone
+            Manager managerClone = (Manager) manager1.clone();
+            System.out.println("Cloned Manager: " + managerClone);
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+
+        // Test Comparable
+        System.out.println("Compare employees: " + emp1.compareTo(emp2));
+
+        // Test Comparator
+        Vector<Employee> team = new Vector<>();
+        team.add(emp1);
+        team.add(emp2);
+
+        Manager managerWithTeam = new Manager("Team Manager", 70000.0, new Date(), "777-888-999", team, 2000.0);
+        HireDateComparator hireDateComparator = new HireDateComparator();
+
+        // Sort employees by hire date
+        team.sort(hireDateComparator);
+        System.out.println("Employees sorted by hire date: " + team);
+    }
+}

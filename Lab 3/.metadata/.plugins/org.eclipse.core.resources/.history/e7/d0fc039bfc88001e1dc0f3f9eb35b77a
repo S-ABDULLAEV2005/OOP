@@ -1,0 +1,35 @@
+package Prob4;
+
+class Employee extends Person {
+    public double annualSalary;
+    public Date hireDate;
+    public String nationalInsuranceNumber;
+
+   
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", annualSalary=" + annualSalary +
+                ", hireDate=" + hireDate +
+                ", nationalInsuranceNumber='" + nationalInsuranceNumber + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        if (!super.equals(obj)) return false;
+        Employee employee = (Employee) obj;
+        return Double.compare(employee.annualSalary, annualSalary) == 0 &&
+                hireDate.equals(employee.hireDate) &&
+                nationalInsuranceNumber.equals(employee.nationalInsuranceNumber);
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone(); // Shallow cloning, you might want to implement deep cloning if needed
+    }
+}

@@ -1,0 +1,7 @@
+package my_pack;
+
+class Shark extends Animal implements CanSwim{
+    void eat() {
+    	System.out.println("Shark is eating");
+    }
+}

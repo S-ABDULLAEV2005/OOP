@@ -1,0 +1,6 @@
+package my_pack;
+
+public class Mouse3 {
+boolean ambidextrous = true;
+	String texture = "Matte";
+}

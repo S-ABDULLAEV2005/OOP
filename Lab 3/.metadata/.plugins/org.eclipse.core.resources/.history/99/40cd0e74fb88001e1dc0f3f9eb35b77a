@@ -1,0 +1,22 @@
+package Prob4;
+
+public class Person {
+    protected String name;
+
+    // Constructor
+    public Person(String name) {
+        this.name = name;
+    }
+
+    // Getter for name
+
+    @Override
+    public String toString() {
+        return "Person{name='" + name + "'}";
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        // Implementation for equals
+    }
+}

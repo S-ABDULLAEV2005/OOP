@@ -1,0 +1,20 @@
+package my_pack;
+
+public class Animal {
+
+	public static void main(String[] args) {
+		Dog d = new Dog();
+		Cat c = new Cat();
+		Hen h = new Hen();
+		
+		d.voice();
+        c.voice();
+        h.voice();
+	}
+
+}
+class odam extends Animal{
+	public static void main(String[] args) {
+	System.out.println("Kaka!");
+}
+}

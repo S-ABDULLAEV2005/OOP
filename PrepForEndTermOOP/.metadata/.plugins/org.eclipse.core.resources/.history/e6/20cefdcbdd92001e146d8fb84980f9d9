@@ -1,0 +1,15 @@
+package prepend;
+import java.util.*;
+public class TechSupport extends Person {
+ private String employeeId;
+ private String expertiseArea;
+ private List<Ticket> assignedTickets;
+ 
+
+public TechSupport(String name, String surname, Date dateOfBirth, String contactInformation, String employeeId, String expertiseArea) {
+	super(name, surname, dateOfBirth, contactInformation);
+	this.employeeId = employeeId;
+	this.expertiseArea = expertiseArea;
+
+}
+}

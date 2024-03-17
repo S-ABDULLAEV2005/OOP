@@ -1,0 +1,27 @@
+package my_pack;
+import java.util.StringTokenizer;
+import java.util.Scanner;
+public class Tokenizer {
+
+
+public static void main(String[] args){
+  Scanner scan = new Scanner(System.in);
+  String s = scan.nextLine();
+	char[] arr = new char[s.length()];
+	for(int i = s.length() - 1; j = 0; i >= 0; i--; j++ ) {
+		arr[j] = s.charAt(i);
+	
+	}
+	String reversed = new String(arr);
+	if(reversed == s) {
+		System.out.println("True");
+	} else {
+		System.out.println("False");
+	}
+	
+	//  StringTokenizer str = new StringTokenizer("Hello world!");
+//  System.out.println(str.countTokens());
+
+}
+}
+

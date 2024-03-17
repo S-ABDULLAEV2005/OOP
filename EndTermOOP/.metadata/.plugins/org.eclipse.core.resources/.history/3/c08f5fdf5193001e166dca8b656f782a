@@ -1,0 +1,9 @@
+package problem9;
+public class PayPalGateway implements PaymentGateway {
+	 public void processPayment(double amount) {
+	     // PayPal-specific payment processing logic
+	     System.out.println("Processing payment via PayPal: $" + amount);
+	 }
+	}
+
+	//PaymentProcessor with Dependency Injection

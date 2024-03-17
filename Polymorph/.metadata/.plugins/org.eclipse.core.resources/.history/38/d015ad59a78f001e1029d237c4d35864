@@ -1,0 +1,14 @@
+package my_pack;
+class Bird{
+	public void sing() {
+		System.out.println("Tweet, tweet, tweet!");
+	}
+}
+//package my_pack;
+
+public class poly {
+      public static void main(String[] args) {
+    	  Bird b = new Bird();
+    	  b.sing();
+      }
+}

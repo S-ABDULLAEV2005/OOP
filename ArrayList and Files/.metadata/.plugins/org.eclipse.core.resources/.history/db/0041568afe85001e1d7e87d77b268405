@@ -1,0 +1,14 @@
+package my_pack;
+
+public class Array {
+
+	public static void main(String[] args) {
+		String[] fruits = new String[3];
+		fruits[0] = "Mango";
+		fruits[1] = "Apple";
+		fruits[2] = "Orange";
+	    System.out.println(fruits[1]);
+	
+	}
+
+}

@@ -1,0 +1,12 @@
+package my_pack;
+import java.util.StringTokenizer;
+public class Tokenizer {
+
+
+public static void main(String[] args){
+  StringTokenizer str = new StringTokenizer("Hello world!");
+  System.out.println(str.countTokens());
+
+}
+}
+

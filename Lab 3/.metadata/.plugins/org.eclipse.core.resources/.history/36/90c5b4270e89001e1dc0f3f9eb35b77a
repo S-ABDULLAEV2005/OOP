@@ -1,0 +1,51 @@
+package Prob3;
+//public interface MyCollection<E> {
+//    boolean add(E element);
+//
+//    boolean remove(E element);
+//
+//    boolean contains(E element);
+//
+//    int size();
+//
+//    boolean isEmpty();
+//}
+public interface MyCollection<E> {
+    // Method to add an element to the collection
+    boolean add(E e);
+
+    // Method to add all elements from another collection
+    boolean addAll(MyCollection<? extends E> c);
+
+    // Method to clear the collection
+    void clear();
+
+    // Method to check if the collection contains a specific element
+    boolean contains(Object o);
+
+    // Method to check if the collection contains all elements from another collection
+    boolean containsAll(MyCollection<?> c);
+
+    // Method to check if the collection is empty
+    boolean isEmpty();
+
+    
+
+    // Method to remove a specific element from the collection
+    boolean remove(Object o);
+
+    // Method to remove all elements from another collection from this collection
+    boolean removeAll(MyCollection<?> c);
+
+    // Method to retain only elements from another collection in this collection
+    boolean retainAll(MyCollection<?> c);
+
+    // Method to return the number of elements in the collection
+    int size();
+
+    // Method to return an array containing all elements in the collection
+    Object[] toArray();
+
+    // Method to return an array containing all elements in the collection, with the specified array type
+    <T> T[] toArray(T[] a);
+}

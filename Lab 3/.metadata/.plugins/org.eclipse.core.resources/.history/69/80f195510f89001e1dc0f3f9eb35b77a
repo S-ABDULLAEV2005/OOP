@@ -1,0 +1,29 @@
+package Prob4;
+import java.util.Vector;
+
+public class Manager extends Employee {
+    private Vector<Employee> team;
+    private double bonus;
+
+    // Constructors
+
+    // Accessor methods for team and bonus
+
+    @Override
+    public String toString() {
+        // Override toString
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        // Override equals
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        // Deep cloning the team Vector
+        Manager clone = (Manager) super.clone();
+        clone.team = new Vector<>(team);
+        return clone;
+    }
+}

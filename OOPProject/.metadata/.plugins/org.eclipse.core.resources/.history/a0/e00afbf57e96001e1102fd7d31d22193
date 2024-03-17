@@ -1,0 +1,246 @@
+package sexyboy;
+
+import java.util.Set;
+import java.util.HashSet;
+
+/**
+* @generated
+*/
+public class Teacher extends Employee {
+    
+    /**
+    * @generated
+    */
+    private Integer TeacherID;
+    
+    /**
+    * @generated
+    */
+    private String fullName;
+    
+    /**
+    * @generated
+    */
+    private Course courseTaught;
+    
+    /**
+    * @generated
+    */
+    private Subject subjectsTaught;
+    
+    /**
+    * @generated
+    */
+    private Student Students;
+    
+    /**
+    * @generated
+    */
+    private Message sentMessages;
+    
+    /**
+    * @generated
+    */
+    private Mark marksGiven;
+    
+    /**
+    * @generated
+    */
+    private Complaint Complaints;
+    
+    /**
+    * @generated
+    */
+    private Message receivedMessages;
+    
+    
+    /**
+    * @generated
+    */
+    private Course course;
+    
+    /**
+    * @generated
+    */
+    private Set<Mark> mark;
+    
+    
+    /**
+    * @generated
+    */
+    public Integer getTeacherID() {
+        return this.TeacherID;
+    }
+    
+    /**
+    * @generated
+    */
+    public Integer setTeacherID(Integer TeacherID) {
+        this.TeacherID = TeacherID;
+    }
+    
+    /**
+    * @generated
+    */
+    public String getFullName() {
+        return this.fullName;
+    }
+    
+    /**
+    * @generated
+    */
+    public String setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+    
+    /**
+    * @generated
+    */
+    public Course getCourseTaught() {
+        return this.courseTaught;
+    }
+    
+    /**
+    * @generated
+    */
+    public Course setCourseTaught(Course courseTaught) {
+        this.courseTaught = courseTaught;
+    }
+    
+    /**
+    * @generated
+    */
+    public Subject getSubjectsTaught() {
+        return this.subjectsTaught;
+    }
+    
+    /**
+    * @generated
+    */
+    public Subject setSubjectsTaught(Subject subjectsTaught) {
+        this.subjectsTaught = subjectsTaught;
+    }
+    
+    /**
+    * @generated
+    */
+    public Student getStudents() {
+        return this.Students;
+    }
+    
+    /**
+    * @generated
+    */
+    public Student setStudents(Student Students) {
+        this.Students = Students;
+    }
+    
+    /**
+    * @generated
+    */
+    public Message getSentMessages() {
+        return this.sentMessages;
+    }
+    
+    /**
+    * @generated
+    */
+    public Message setSentMessages(Message sentMessages) {
+        this.sentMessages = sentMessages;
+    }
+    
+    /**
+    * @generated
+    */
+    public Mark getMarksGiven() {
+        return this.marksGiven;
+    }
+    
+    /**
+    * @generated
+    */
+    public Mark setMarksGiven(Mark marksGiven) {
+        this.marksGiven = marksGiven;
+    }
+    
+    /**
+    * @generated
+    */
+    public Complaint getComplaints() {
+        return this.Complaints;
+    }
+    
+    /**
+    * @generated
+    */
+    public Complaint setComplaints(Complaint Complaints) {
+        this.Complaints = Complaints;
+    }
+    
+    /**
+    * @generated
+    */
+    public Message getReceivedMessages() {
+        return this.receivedMessages;
+    }
+    
+    /**
+    * @generated
+    */
+    public Message setReceivedMessages(Message receivedMessages) {
+        this.receivedMessages = receivedMessages;
+    }
+    
+
+    //                          Operations                                  
+    
+    /**
+    * @generated
+    */
+    public void  addTaughtCourse() {
+        //TODO
+        return null;
+    }
+    
+    /**
+    * @generated
+    */
+    public void removeTaughtCourse() {
+        //TODO
+        return null;
+    }
+    
+    /**
+    * @generated
+    */
+    public void gradeStudent() {
+        //TODO
+        return null;
+    }
+    
+    /**
+    * @generated
+    */
+    public Mark viewCourse() {
+        //TODO
+        return null;
+    }
+    
+    /**
+    * @generated
+    */
+    public Course viewCourse() {
+        //TODO
+        return null;
+    }
+    
+    /**
+    * @generated
+    */
+    public Student AboutStudents() {
+        //TODO
+        return null;
+    }
+    
+    
+}
